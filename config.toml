@@ -1,0 +1,9 @@
+[api]
+url='https://www.themuse.com/api/public/jobs?page='
+
+[aws]
+bucket='py-project-pull'
+folder='input/'
+
+[run]
+py_script="import_json.py"

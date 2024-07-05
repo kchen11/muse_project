@@ -1,0 +1,10 @@
+Start to run Python Script
+Completed 2.0 KiB/2.0 KiB (18.3 KiB/s) with 1 file(s) remainingupload: output/2024_07_05_20:30:37_final.csv to s3://py-project-pull/input/2024_07_05_20:30:37_final.csv
+/home/ubuntu/project
+Success: 200
+reading api
+returning api as json
+(23, 6)
+saving df to csv file
+success
+successful

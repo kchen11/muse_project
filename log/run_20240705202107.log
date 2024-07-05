@@ -1,0 +1,9 @@
+Start to run Python Script
+Traceback (most recent call last):
+  File "import_json.py", line 44, in <module>
+    app_config = toml.load(os.getcwd()+'/project/'+'config.toml')
+  File "/home/ubuntu/project/sandbox/lib/python3.8/site-packages/toml/decoder.py", line 133, in load
+    with io.open(_getpath(f), encoding='utf-8') as ffile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/project/project/config.toml'
+SCRIPT FAILED
+RETURN CODE: 1

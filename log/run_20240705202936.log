@@ -1,0 +1,23 @@
+Start to run Python Script
+/home/ubuntu/project
+Success: 200
+reading api
+returning api as json
+(23, 6)
+saving df to csv file
+Traceback (most recent call last):
+  File "import_json.py", line 75, in <module>
+    df_final.to_csv(final_path,index=False)
+  File "/home/ubuntu/project/sandbox/lib/python3.8/site-packages/pandas/core/generic.py", line 3772, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/ubuntu/project/sandbox/lib/python3.8/site-packages/pandas/io/formats/format.py", line 1186, in to_csv
+    csv_formatter.save()
+  File "/home/ubuntu/project/sandbox/lib/python3.8/site-packages/pandas/io/formats/csvs.py", line 240, in save
+    with get_handle(
+  File "/home/ubuntu/project/sandbox/lib/python3.8/site-packages/pandas/io/common.py", line 737, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/ubuntu/project/sandbox/lib/python3.8/site-packages/pandas/io/common.py", line 600, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/home/ubuntuproject/output'
+SCRIPT FAILED
+RETURN CODE: 1

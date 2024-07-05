@@ -1,0 +1,13 @@
+Start to run Python Script
+/home/ubuntu/project
+Success: 200
+reading api
+returning api as json
+Traceback (most recent call last):
+  File "import_json.py", line 66, in <module>
+    df[['city','country']] = df['location'].str.split(r', | /', n=1,expand=True,regex=True)
+  File "/home/ubuntu/project/sandbox/lib/python3.8/site-packages/pandas/core/strings/accessor.py", line 116, in wrapper
+    return func(self, *args, **kwargs)
+TypeError: split() got an unexpected keyword argument 'regex'
+SCRIPT FAILED
+RETURN CODE: 1
