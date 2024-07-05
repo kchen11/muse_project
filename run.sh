@@ -16,9 +16,9 @@ current_timestamp=`date '+%Y%m%d%H%M%S'`
 
 export whoaminame=$(whoami)
 export BASE_FOLDER="/home/"$whoaminame
-export OUTPUT_FOLDER=$BASE_FOLDER"/project/output"
-export SCRIPT_FOLDER=$BASE_FOLDER"/project/"
-export LOG_FOLDER=$BASE_FOLDER"/project/log"
+export OUTPUT_FOLDER=$BASE_FOLDER"/muse_project/output"
+export SCRIPT_FOLDER=$BASE_FOLDER"/muse_project/"
+export LOG_FOLDER=$BASE_FOLDER"/muse_project/log"
 
 if [ ! -d "$LOG_FOLDER" ]; then
     mkdir -p "$LOG_FOLDER"
@@ -27,7 +27,7 @@ fi
 
 export SHELL_NAME=$(basename "$0" | cut -d. -f1) # cuts off extenstion of filename
 export LOG_FILE=${LOG_FOLDER}/${SHELL_NAME}_${current_timestamp}.log
-export OUTPUT_FOLDER=$BASE_FOLDER"/project/output"
+export OUTPUT_FOLDER=$BASE_FOLDER"/muse_project/output"
 
 # 3) set up log file rules
 
